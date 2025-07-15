@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <base href="https://www.exemplo.com/" target="_blank">
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Descrição da página">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Nome do Autor">
+    <style type="text/css">
+        /* Estilos CSS podem ficar aqui, mas você pediu sem CSS */
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalhos -->
+    <h1>Cabeçalho Nível 1</h1>
+    <h2>Cabeçalho Nível 2</h2>
+    <h3>Cabeçalho Nível 3</h3>
+    <h4>Cabeçalho Nível 4</h4>
+    <h5>Cabeçalho Nível 5</h5>
+    <h6>Cabeçalho Nível 6</h6>
+
+    <!-- Parágrafos e formatação de texto -->
+    <p>Este é um parágrafo.</p>
+    <p>Outro parágrafo com <br> quebra de linha.</p>
+    <p><strong>Texto em negrito</strong>, <em>texto em itálico</em>, <u>sublinhado</u>, <s>riscado</s>.</p>
+    <p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+    <p><small>Texto pequeno</small>, <mark>texto marcado</mark>.</p>
+    <p><q>Citação curta</q> ou <blockquote>Citação longa</blockquote></p>
+    <p><abbr title="HyperText Markup Language">HTML</abbr></p>
+    <p><code>Código de computador</code></p>
+    <pre>Texto pré-formatado
+        mantém espaços
+        e quebras de linha</pre>
+    <hr>
+
+    <!-- Links -->
+    <a href="https://www.exemplo.com">Link absoluto</a>
+    <a href="pasta/arquivo.html">Link relativo</a>
+    <a href="#secao">Link âncora</a>
+    <a href="mailto:email@exemplo.com">Link de email</a>
+    <a href="tel:+5511999999999">Link de telefone</a>
+    <a href="javascript:void(0)">Link vazio (você pediu sem JS, mas é HTML)</a>
+
+    <!-- Listas -->
+    <ul>
+        <li>Item não ordenado 1</li>
+        <li>Item não ordenado 2</li>
+    </ul>
+
+    <ol>
+        <li>Item ordenado 1</li>
+        <li>Item ordenado 2</li>
+    </ol>
+
+    <dl>
+        <dt>Termo 1</dt>
+        <dd>Definição 1</dd>
+        <dt>Termo 2</dt>
+        <dd>Definição 2</dd>
+    </dl>
+
+    <!-- Tabelas -->
+    <table border="1">
+        <caption>Título da Tabela</caption>
+        <thead>
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Célula 1</td>
+                <td>Célula 2</td>
+            </tr>
+            <tr>
+                <td colspan="2">Célula mesclada</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Rodapé 1</td>
+                <td>Rodapé 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Formulários -->
+    <form action="/enviar" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120">
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+            
+            <label for="cor">Cor favorita:</label>
+            <input type="color" id="cor" name="cor">
+            
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo">
+            
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="br">Brasil</option>
+                <option value="us">Estados Unidos</option>
+                <option value="pt">Portugal</option>
+            </select>
+            
+            <label>Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="m">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="f">
+            <label for="feminino">Feminino</label>
+            
+            <label>Interesses:</label>
+            <input type="checkbox" id="tech" name="interesses" value="tech">
+            <label for="tech">Tecnologia</label>
+            <input type="checkbox" id="esportes" name="interesses" value="esportes">
+            <label for="esportes">Esportes</label>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Botão">
+            <input type="hidden" name="token" value="12345">
+        </fieldset>
+    </form>
+
+    <!-- Mídia -->
+    <img src="imagem.jpg" alt="Texto alternativo" width="300" height="200">
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_paisagem.jpg">
+        <source media="(min-width: 465px)" srcset="img_retrato.jpg">
+        <img src="img_default.jpg" alt="Imagem padrão">
+    </picture>
+    
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+    
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+    
+    <iframe src="https://www.exemplo.com" title="Exemplo Iframe"></iframe>
+    <embed src="arquivo.pdf" type="application/pdf" width="500" height="375">
+    <object data="arquivo.swf" type="application/x-shockwave-flash" width="400" height="300"></object>
+
+    <!-- Elementos semânticos -->
+    <header>Cabeçalho da página ou seção</header>
+    <nav>Menu de navegação</nav>
+    <main>Conteúdo principal</main>
+    <article>Artigo/conteúdo independente</article>
+    <section>Seção do documento</section>
+    <aside>Conteúdo relacionado/barra lateral</aside>
+    <footer>Rodapé da página ou seção</footer>
+    <figure>
+        <img src="imagem.jpg" alt="Imagem">
+        <figcaption>Legenda da imagem</figcaption>
+    </figure>
+    <details>
+        <summary>Mais informações</summary>
+        <p>Conteúdo detalhado que pode ser expandido.</p>
+    </details>
+    <dialog open>Diálogo/modal</dialog>
+
+    <!-- Elementos diversos -->
+    <progress value="70" max="100"></progress>
+    <meter value="2" min="0" max="10">2 de 10</meter>
+    <time datetime="2023-10-05">5 de Outubro</time>
+    <data value="123">Produto XYZ</data>
+    <template>
+        <p>Conteúdo de template que não é renderizado</p>
+    </template>
+    <slot>Espaço reservado para conteúdo</slot>
+    <canvas id="meuCanvas" width="200" height="100"></canvas>
+    <noscript>
+        <p>Seu navegador não suporta JavaScript ou está desativado.</p>
+    </noscript>
+
+</body>
+</html>
